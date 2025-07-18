@@ -56,14 +56,14 @@ const PhotoDetails = async({id,lang}) => {
             <div className="flex items-center gap-3">
               <Image className="size-12 lg:size-14 rounded-full border" src={photo.author.avatar} alt="avatar"width={50} height={50} ></Image>
               <div className="spacy-y-3">
-                <h6 className="lg:text-lg font-bold">Saad Hasan</h6>
-                <p className="text-black/60 text-xs lg:text-sm">420 Followers</p>
+                <h6 className="lg:text-lg font-bold">{photo.author.name}</h6>
+                <p className="text-black/60 text-xs lg:text-sm">{photo.author.followers} ${dict.followers}</p>
               </div>
             </div>
          
             <button className="flex items-center gap-1.5 text-black/60 text-xs xl:text-sm">
               <img src="./assets/icons/follow.svg" className="w-5 h-5" />
-              Follow
+              {dict.follow}
             </button>
           </div>
          
