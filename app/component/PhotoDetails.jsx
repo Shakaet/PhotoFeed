@@ -14,7 +14,7 @@ const PhotoDetails = async({id,lang}) => {
 
    console.log(photo)
   return (
-     <div className="grid grid-cols-12 gap-4 2xl:gap-10 ">
+     <div className="grid grid-cols-12 mx-auto gap-4 2xl:gap-10 ">
     
       <div className="col-span-12 lg:col-span-8 border rounded-xl">
         <Image className="max-w-full h-full max-h-[70vh] mx-auto" src={photo?.url} alt=""width={900}height={500} />
